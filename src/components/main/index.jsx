@@ -1,9 +1,9 @@
-import Experiencia from '../experiencia';
+import './style.css';
 import Sobre from '../sobre';
+import Experiencia from '../experiencia';
 import Formacao from '../formacao';
 import Cursos from '../cursos';
 import Projetos from '../projetos';
-import './style.css';
 
 function Main ( ) {
     return (
