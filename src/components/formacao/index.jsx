@@ -1,6 +1,16 @@
+import Content from "../content";
+
 function Formacao () {
     return (
-        <h1>Formacao</h1>
+        <div id="Formacao">
+        <Content
+        title="Curso Superior de Tecnologia (CST) de Análise e desenvolvimento de sistemas"
+        subtitle="Jan 2021 - Dez 2022"
+        content="Tem como especialidade o desenvolvimento de sistemas informatizados para diversos setores,
+        visando um melhor aproveitamento das máquinas com uma maior capacidade de armazenamento e velocidade no processamento dos dados."
+        />
+
+        </div>
     )
 }
 
