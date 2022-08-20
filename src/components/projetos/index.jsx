@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Content from "../content";
 
 
 function Projetos () {
@@ -21,8 +22,11 @@ function Projetos () {
             {repositories.map(repository => {
                 return (
                     <li>
-                        <h3>{repository.name}</h3>
-                        <h3>{repository.html_url}</h3>
+                        <Content
+                        title={repository.name}
+                        link_title="Github"
+                        link={repository.html_url}
+                        />
                     </li>
                 )
             })}
