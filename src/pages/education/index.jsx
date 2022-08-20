@@ -1,8 +1,10 @@
-import Content from "../content";
+import Content from "../../components/content";
+import Titleh1 from '../../components/h1';
 
 function Education () {
     return (
         <div id="Formacao">
+        <Titleh1 title="Formação" />
         <Content
         title="Curso Superior de Tecnologia (CST) de Análise e desenvolvimento de sistemas"
         subtitle="Jan 2021 - Dez 2022"

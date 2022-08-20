@@ -1,9 +1,10 @@
-import Content from "../content";
+import Content from "../../components/content";
+import Titleh1 from '../../components/h1';
 
 function Courses () {
     return (
         <div id="Cursos">
-        <h1>Cursos</h1>
+        <Titleh1 title="Cursos e formações extras"/>
         <Content
         title="INTRODUÇÃO  À  PROGRAMAÇÃO  ORIENTADA  A  OBJETOS  (POO)"
         content="Fundação Bradesco"

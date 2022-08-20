@@ -1,9 +1,10 @@
-import Content from "../content";
+import Content from "../../components/content";
+import Titleh1 from '../../components/h1';
 
 function Jobs () {
     return (
         <div id="Experiencia">
-        <h1>Experiencia</h1>
+        <Titleh1 title="Experiencias anteriores"/>
         <Content
         title="Estágio em desenvolvimento web na Mosyle"
         subtitle="Fev 2022 - Atualmente"

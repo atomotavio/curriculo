@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Titleh1 from '../h1';
+import Titleh1 from '../../components/h1';
 
 function About() {
     const Paragraph = styled.p`
@@ -10,7 +10,7 @@ function About() {
 
     return (
         <div id="Sobre">
-        <Titleh1 title="Sobre"/>
+        <Titleh1 title="Sobre" />
         <Paragraph>
             Nasci em Itu-SP, tenho 25 anos, sou estudante de Análise e desenvolvimento de sistemas pela Wyden e estou cursando o último semestre.
         </Paragraph>
