@@ -1,6 +1,6 @@
 import Content from "../content";
 
-function Experiencia () {
+function Jobs () {
     return (
         <div id="Experiencia">
         <h1>Experiencia</h1>
@@ -16,4 +16,4 @@ function Experiencia () {
     )
 }
 
-export default Experiencia;
+export default Jobs;

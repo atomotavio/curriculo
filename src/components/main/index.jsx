@@ -1,18 +1,18 @@
 import './style.css';
-import Sobre from '../sobre';
-import Experiencia from '../experiencia';
-import Formacao from '../formacao';
-import Cursos from '../cursos';
-import Projetos from '../projetos';
+import About from '../about';
+import Jobs from '../jobs';
+import Education from '../education';
+import Courses from '../courses';
+import Projects from '../projects';
 
 function Main ( ) {
     return (
         <>
-        <Sobre />
-        <Experiencia />
-        <Formacao />
-        <Cursos />
-        <Projetos />
+        <About />
+        <Jobs />
+        <Education />
+        <Courses />
+        <Projects />
         </>
     )
 }

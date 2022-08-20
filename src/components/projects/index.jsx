@@ -3,7 +3,7 @@ import axios from "axios";
 import Content from "../content";
 
 
-function Projetos () {
+function Projects () {
     
     const [repositories, setRepositories] = useState([]);
 
@@ -35,4 +35,4 @@ function Projetos () {
     )
 }
 
-export default Projetos;
+export default Projects;

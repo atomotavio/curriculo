@@ -1,6 +1,6 @@
 import Content from "../content";
 
-function Formacao () {
+function Education () {
     return (
         <div id="Formacao">
         <Content
@@ -14,4 +14,4 @@ function Formacao () {
     )
 }
 
-export default Formacao;
+export default Education;

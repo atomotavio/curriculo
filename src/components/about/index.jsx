@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Titleh1 from '../h1';
 
-function Sobre() {
+function About() {
     const Paragraph = styled.p`
         font-size: 1em;
         color: #f8f8f2;
@@ -39,4 +39,4 @@ function Sobre() {
     )
     }
     
-    export default Sobre;
+    export default About;
