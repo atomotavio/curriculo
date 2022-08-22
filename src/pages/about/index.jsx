@@ -1,7 +1,19 @@
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Titleh1 from '../../components/h1';
+import axios from 'axios';
 
 function About() {
+    const [profile, setProfile] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://api.github.com/users/atomotavio')
+        .then(function (response) {
+            setProfile(response.data);
+          });
+          
+    }, [])
+
     const Paragraph = styled.p`
         font-size: 1em;
         color: #f8f8f2;

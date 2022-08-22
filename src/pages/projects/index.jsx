@@ -29,18 +29,20 @@ function Projects () {
         <Wrapper>
             {repositories.map(repository => {
                 if (repository.fork === false) {
+                    if (repository.description !== null) {
                     return (
                         <li>
                             <Content
                             title={repository.name}
                             subtitle={repository.language}
-                            link_title="Github"
+                            content={repository.description}
+                            link_title="Repositório"
                             link={repository.html_url}
                             
                             />
                         </li>
                     )
-                }
+                }}
             })}
         </Wrapper>
         </div>
