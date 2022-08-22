@@ -5,6 +5,7 @@ function Paragraph (props) {
     const Paragraph = styled.p`
         font-size: 1em;
         color: #f8f8f2;
+        margin: 0;
     `;
     
     return (
