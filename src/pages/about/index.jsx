@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import Titleh1 from '../../components/h1';
 import axios from 'axios';
 import Paragraph from '../../components/paragraph';
-import Content from '../../components/content';
 import styled from 'styled-components';
+import { FaLinkedin, FaGithub, FaBlogger } from "react-icons/fa";
 
 function About() {
     const [profile, setProfile] = useState([]);
@@ -51,9 +51,9 @@ function About() {
         <Paragraph content="Também possuo um projeto que teve inicio em 2016 como um blog para falar sobre jogos independentes brasileiros e estou trabalhando 
             para transformá-lo em uma plataforma para fomentar e divulgar projetos independentes de desenvolvedores brasileiros, 
             sejam eles jogos, softwares ou aplicativos" />
-        <Link href='https://github.com/atomotavio' target="_blank" >Github</Link>
-        <Link href='https://www.linkedin.com/in/atomotavio/' ttarget="_blank">Linkedin</Link>
-        <Link href='https://www.areaindie.tech'target="_blank">Area Indie</Link>
+        <Link href='https://github.com/atomotavio' target="_blank" ><FaGithub/> Github</Link>
+        <Link href='https://www.linkedin.com/in/atomotavio/' ttarget="_blank"><FaLinkedin/> Linkedin</Link>
+        <Link href='https://www.areaindie.tech'target="_blank"><FaBlogger /> Area Indie</Link>
         </div>
         </Wrapper>
         </div>
