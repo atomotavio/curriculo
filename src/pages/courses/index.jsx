@@ -6,22 +6,10 @@ function Courses () {
     return (
         <div id="Cursos">
         <Titleh1><FaFileCode/> Cursos e formações extras</Titleh1>
-        <Content
-        title="INTRODUÇÃO  À  PROGRAMAÇÃO  ORIENTADA  A  OBJETOS  (POO)"
-        content="Fundação Bradesco"
-        />
-        <Content
-        title="Formação Completa em Scrum - Planejamento e Gestão Ágil de Projetos"
-        content="Unieducar"
-        />
-        <Content
-        title="Fundamentos de Javascript Funcional"
-        content="Cod3r"
-        />
-        <Content
-        title="Curso Intensivo de Next.JS & React"
-        content="Cod3r"
-        />
+        <Content title="INTRODUÇÃO  À  PROGRAMAÇÃO  ORIENTADA  A  OBJETOS  (POO)">Fundação Bradesco</Content>
+        <Content title="Formação Completa em Scrum - Planejamento e Gestão Ágil de Projetos">Unieducar</Content>
+        <Content title="Fundamentos de Javascript Funcional">Cod3r</Content>
+        <Content title="Curso Intensivo de Next.JS & React">Cod3r</Content>
         </div>
     )
 }

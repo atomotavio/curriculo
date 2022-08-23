@@ -22,29 +22,33 @@ function Projects () {
     const Wrapper = styled.ul`
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
             list-style: none;
+            padding: 0;
+            gap: 30px;
+            justify-content: center;
 
+        `;
+
+    const Item = styled.li`
+        display: flex;
+        flex-direction: column;
+        width: 15%;
         `;
 
     return (
         <div id="Projetos">
         <Titleh1><FaProjectDiagram /> Projetos</Titleh1>
-        <Paragraph content="Nessa sessão voce pode conferir meus principais projetos/repositórios do github."/>
+        <Paragraph>Nessa sessão voce pode conferir meus principais projetos/repositórios do github.</Paragraph>
         <Wrapper>
             {repositories.map(repository => {
                 if (repository.fork === false) {
                     if (repository.description !== null) {
                     return (
-                        <li>
-                            <Content
-                            title={repository.name}
-                            subtitle={repository.language}
-                            content={repository.description}
-                            link_title="Repositório"
-                            link={repository.html_url}
-                            />
-                        </li>
+                        <Item>
+                            <Content title={repository.name} subtitle={repository.language} link_title="Repositório" link={repository.html_url}>
+                            {repository.description}
+                            </Content>
+                        </Item>
                     )
                 }}
             })}

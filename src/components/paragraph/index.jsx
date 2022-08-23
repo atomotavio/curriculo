@@ -10,7 +10,7 @@ function Paragraph (props) {
     `;
     
     return (
-        <Paragraph>{props.content}</Paragraph>
+        <Paragraph>{props.children}</Paragraph>
     )
 }
 

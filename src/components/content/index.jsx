@@ -7,9 +7,9 @@ function Content (props) {
     return (
         <>
         <Titleh2 title={props.title}/>
-        <Paragraph content={props.subtitle} />
-        <Paragraph content={props.content} />
-        <Link link={props.link} link_title={props.link_title} />
+        <Paragraph>{props.subtitle}</Paragraph>
+        <Paragraph>{props.children}</Paragraph>
+        <Link link={props.link}>{props.link_title}</Link>
         </>
     )
 }
