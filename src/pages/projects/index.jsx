@@ -4,6 +4,7 @@ import Content from "../../components/content";
 import Titleh1 from '../../components/h1';
 import styled from "styled-components";
 import Paragraph from "../../components/paragraph";
+import { FaProjectDiagram } from "react-icons/fa";
 
 
 function Projects () {
@@ -28,7 +29,7 @@ function Projects () {
 
     return (
         <div id="Projetos">
-        <Titleh1 title="Projetos" />
+        <Titleh1><FaProjectDiagram /> Projetos</Titleh1>
         <Paragraph content="Nessa sessão voce pode conferir meus principais projetos/repositórios do github."/>
         <Wrapper>
             {repositories.map(repository => {

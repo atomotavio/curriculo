@@ -1,10 +1,11 @@
 import Content from "../../components/content";
 import Titleh1 from '../../components/h1';
+import { FaCode } from "react-icons/fa";
 
 function Jobs () {
     return (
         <div id="Experiencia">
-        <Titleh1 title="Experiencias anteriores"/>
+        <Titleh1> <FaCode /> Experiencias anteriores</Titleh1>
         <Content
         title="Estágio em desenvolvimento web na Mosyle"
         subtitle="Fev 2022 - Atualmente"

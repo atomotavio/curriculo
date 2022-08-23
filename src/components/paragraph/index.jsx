@@ -6,6 +6,7 @@ function Paragraph (props) {
         font-size: 1em;
         color: #f8f8f2;
         margin: 0;
+        margin-bottom: 10px;
     `;
     
     return (

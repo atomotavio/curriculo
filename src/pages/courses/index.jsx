@@ -1,10 +1,11 @@
 import Content from "../../components/content";
 import Titleh1 from '../../components/h1';
+import { FaFileCode } from "react-icons/fa";
 
 function Courses () {
     return (
         <div id="Cursos">
-        <Titleh1 title="Cursos e formações extras"/>
+        <Titleh1><FaFileCode/> Cursos e formações extras</Titleh1>
         <Content
         title="INTRODUÇÃO  À  PROGRAMAÇÃO  ORIENTADA  A  OBJETOS  (POO)"
         content="Fundação Bradesco"

@@ -3,7 +3,7 @@ import Titleh1 from '../../components/h1';
 import axios from 'axios';
 import Paragraph from '../../components/paragraph';
 import styled from 'styled-components';
-import { FaLinkedin, FaGithub, FaBlogger } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaBlogger, FaLightbulb } from "react-icons/fa";
 
 function About() {
     const [profile, setProfile] = useState([]);
@@ -19,6 +19,9 @@ function About() {
     const Wrapper = styled.div`
         display: flex;
         gap: 30px;
+        background-color: #44475a;
+        padding: 30px;
+        align-items: center;
         `;
     
     const Image = styled.img`
@@ -27,11 +30,17 @@ function About() {
         `;
     const Link = styled.a`
         margin-right: 10px;
+        text-decoration: none;
+        color: #bd93f9;
+
+        &:hover {
+            color: #50fa7b;
+        }
     `;
 
     return (
         <div id="Sobre">
-        <Titleh1 title="Sobre" />
+        <Titleh1><FaLightbulb/> Sobre</Titleh1>
         <Wrapper>
         <div>
         <Image src={profile.avatar_url} />

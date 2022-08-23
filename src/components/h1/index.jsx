@@ -8,7 +8,7 @@ function Titleh1 (props) {
     `;
 
     return (
-        <Title>{props.title}</Title>
+        <Title>{props.children}</Title>
     )
 }
 
