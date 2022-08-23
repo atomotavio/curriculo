@@ -23,16 +23,18 @@ function Projects () {
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-            padding: 0;
-            gap: 30px;
-            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            column-gap: 20px;
+            justify-content: space-between;
+            background-color: #44475a;
 
         `;
 
     const Item = styled.li`
         display: flex;
         flex-direction: column;
-        width: 15%;
+        width: 25%;
         `;
 
     return (
