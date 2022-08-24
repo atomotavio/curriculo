@@ -42,9 +42,9 @@ function Projects () {
         <Titleh1><FaProjectDiagram /> Projetos</Titleh1>
         <Paragraph>Nessa sessão voce pode conferir meus principais projetos/repositórios do github.</Paragraph>
         <Wrapper>
-            {repositories.map(repository => {
-                if (repository.fork === false) {
-                    if (repository.description !== null) {
+            {repositories.filter(function(repositories) {return repositories.description !== null;})
+                    .filter(function(repositories) {return !repositories.fork;})
+                    .map(repository => {
                     return (
                         <Item>
                             <Content title={repository.name} subtitle={repository.language} link_title="Repositório" link={repository.html_url}>
@@ -52,7 +52,7 @@ function Projects () {
                             </Content>
                         </Item>
                     )
-                }}
+
             })}
         </Wrapper>
         </div>
